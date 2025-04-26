@@ -16,7 +16,7 @@ namespace GTUnixSDKPatch
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) return;
 
-            Harmony = new Harmony("luna.gtynixsdkpatch");
+            Harmony = new Harmony("luna.gtunixsdkpatch");
             Harmony.PatchAll();
         }
     }
