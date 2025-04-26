@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System;
 
-namespace GTLinuxSDKPatch 
+namespace GTUnixSDKPatch 
 {
     [InitializeOnLoad]
     public static class HarmonySetup 
@@ -14,9 +14,9 @@ namespace GTLinuxSDKPatch
         static Harmony Harmony;
         static HarmonySetup() 
         {
-            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) return;
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) return;
 
-            Harmony = new Harmony("luna.gtlinuxsdkpatch");
+            Harmony = new Harmony("luna.gtynixsdkpatch");
             Harmony.PatchAll();
         }
     }
