@@ -17,3 +17,7 @@ The **solution** is what is contained in this repository. It uses Harmony to pat
 It makes the endings of the aforementioned assetbundles **lowercase** instead of uppercase in the builder script, therefore finding the right file, and all is well!
 
 All it would take for Another Axiom to fix this problem upstream is make two strings lowercase instead of uppercase. That wouldn’t break anything on Windows, because NTFS is case-insensitive and therefore wouldn’t care about the capitalization not matching.
+
+> Case-insensitive names are horribly wrong, and you shouldn't have done them at all. The problem wasn't the lack of testing, the problem was implementing it in the first place.
+
+- Linus Torvalds
